@@ -1,0 +1,49 @@
+.kalamun-oa-doublexposure {
+	position:relative;
+	overflow:hidden;
+}
+.kalamun-oa-doublexposure img,
+.kalamun-oa-doublexposure video,
+.kalamun-oa-doublexposure object {
+	position:absolute;
+	width:100% !important;
+	height:100% !important;
+	top:0;
+	left:0;
+	object-fit:cover;
+}
+.kalamun-oa-doublexposure img.mask,
+.kalamun-oa-doublexposure video.mask,
+.kalamun-oa-doublexposure object.mask {
+	z-index:3;
+	position:relative;
+}
+.kalamun-oa-doublexposure img.fadein,
+.kalamun-oa-doublexposure video.fadein,
+.kalamun-oa-doublexposure object.fadein {
+	z-index:2;
+}
+.kalamun-oa-doublexposure img.mask,
+.kalamun-oa-doublexposure video.mask,
+.kalamun-oa-doublexposure img.fadein,
+.kalamun-oa-doublexposure video.fadein {
+	mix-blend-mode: screen;
+}
+.kalamun-oa-doublexposure h1 {
+	color:transparent;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	margin:0;
+}
+.kalamun-oa-doublexposure h2 {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width: 100%;
+	text-align: center;
+	z-index:4;
+	font-weight:normal;
+	margin:0;
+}
